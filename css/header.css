@@ -1,0 +1,147 @@
+.header {
+    background-color: var(--color-header-bg);
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header__logo-link {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 700;
+    color: var(--color-primary);
+
+}
+
+.header__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: transparent;
+    border: none;
+}
+
+.header__burger-line {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__promo {
+    padding: 100px 0 130px;
+}
+
+.header__promo-title {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 400;
+
+    text-align: center;
+
+    color: var(--color-primary);
+}
+
+.header__promo-subtitle {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+
+    text-align: center;
+
+    color: var(--color-orange);
+
+    margin-top: 35px;
+}
+
+.header__promo-btn {
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    margin: 50px auto 0;
+    padding: 16px 32px;
+
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-orange);
+    border-radius: 34px;
+
+    text-align: center;
+
+    transition: all .3s;
+}
+
+.header__promo-btn:hover {
+    background-color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .header__promo {
+        padding: 170px 0 210px;
+    }
+
+    .header__promo-title {
+        font-size: 58px;
+        line-height: 69px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header__top {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__logo {
+        margin: auto;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__nav {
+        display: block;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header__nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-primary);
+        transition: all .3s;
+    }
+
+    .header__nav-link:hover {
+        color: var(--color-orange);
+    }
+
+    .header__promo {
+        padding: 230px 0 290px;
+    }
+
+    .header__promo-title {
+        font-size: 62px;
+        line-height: 74px;
+    }
+}

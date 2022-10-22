@@ -1,0 +1,29 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    /*  font-family: 'Libre Caslon Text', serif;  */
+    --color-primary: #1a1a1a;
+    --color-orange: #f27523;
+    --color-white: #fff;
+    --color-header-bg: #fece2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
