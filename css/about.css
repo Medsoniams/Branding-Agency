@@ -1,0 +1,133 @@
+.about {
+    padding: 90px 0 40px;
+    background-color: var(--color-about-bg);
+}
+
+.about__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1.4px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--color-orange);
+}
+
+.about__title {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+
+    text-align: center;
+
+    color: var(--color-primary);
+
+    margin-top: 20px;
+}
+
+.about__description {
+    max-width: 770px;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: var(--color-primary);
+    text-align: center;
+
+    margin: 95px auto 0;
+}
+
+.about__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about__card {
+    width: 100%;
+    text-align: center;
+}
+
+.about__cards-title {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-orange);
+}
+
+.about__cards-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+    margin-top: 20px;
+}
+
+.content {
+    position: relative;
+    margin: 80px 0;
+    padding: 0 30px;
+    max-width: 1200px;
+}
+
+.about__company-img {
+    width: 100%;
+}
+
+.slick-prev::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../icons/carousel__button-left.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.slick-next::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../icons/carousel__button-right.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 768px) {
+    .about__title {
+        font-size: 41px;
+        line-height: 48px;
+    }
+
+    .about__description {
+        margin-top: 45px;
+    }
+
+    .about__cards {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about__cards-title {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 31px;
+    }
+}
+
+@media (min-width: 991px) {
+    .about__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
