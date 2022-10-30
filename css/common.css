@@ -6,13 +6,17 @@
     --color-orange: #f27523;
     --color-white: #fff;
     --color-header-bg: #fece2f;
-    --color-about-bg: #f5f5f5;
+    --color-gray-bg: #f5f5f5;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body.lock {
+    overflow: hidden;
 }
 
 ul {
