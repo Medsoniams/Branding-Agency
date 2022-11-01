@@ -1,0 +1,111 @@
+.testimonials {
+    padding: 50px 0 90px;
+    background-color: var(--color-gray-bg);
+}
+
+.testimonials__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+    color: var(--color-orange);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.testimonials__title {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonials__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 30px;
+    margin-top: 45px;
+}
+
+.testimonials__card {
+    text-align: center;
+    background-color: var(--color-white);
+    padding: 43px 29px;
+}
+
+.testimonials__card-description {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.testimonials__card-date {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+    color: var(--color-orange);
+}
+
+.testimonials__card-user {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 40px;
+    color: var(--color-primary);
+}
+
+.testimonials__card-profession {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) {
+    .testimonials__title {
+        font-size: 41px;
+        line-height: 48px;
+    }
+
+    .testimonials__cards {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .testimonials__card {
+        flex: 1 322px;
+    }
+
+    .testimonials__card-user {
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .testimonials__card {
+        flex: 1 273px;
+    }
+
+    .testimonials__card-user {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
