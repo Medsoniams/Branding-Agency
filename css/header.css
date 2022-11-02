@@ -89,6 +89,11 @@
     font-size: 18px;
     font-weight: 500;
     color: var(--color-primary);
+    transition: all .3s;
+}
+
+.header__nav.active .header__nav-link:hover {
+    color: var(--color-orange);
 }
 
 .header__promo {
