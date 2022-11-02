@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--color-header-bg);
+    background-color: var(--color-yellow-bg);
 }
 
 .header__top {
@@ -75,7 +75,7 @@
     top: 100px;
     left: 0;
     z-index: 10;
-    background-color: var(--color-header-bg);
+    background-color: var(--color-yellow-bg);
 }
 
 .header__nav.active .header__nav-list {

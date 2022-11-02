@@ -1,0 +1,92 @@
+.contact {
+    padding: 90px 0;
+    background-color: var(--color-yellow-bg);
+}
+
+.contact__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-orange);
+}
+
+.contact__title {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact__description {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: 25px;
+}
+
+.contact__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact__btn {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    color: var(--color-primary);
+    padding: 16px 32px;
+    border-radius: 34px;
+    background-color: var(--color-orange);
+    transition: all .3s;
+}
+
+.contact__btn.btn-transparent {
+    border: 2px solid var(--color-orange);
+    background-color: transparent;
+}
+
+.contact__btn:first-child {
+    color: var(--color-white);
+}
+
+.contact__btn:first-child:hover {
+    background-color: var(--color-primary);
+}
+
+.contact__btn:last-child:hover {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+@media (min-width: 768px) {
+    .contact {
+        padding: 105px 0;
+    }
+
+    .contact__title {
+        font-size: 41px;
+        line-height: 48px;
+    }
+}
+
+@media (min-width: 991px) {
+    .contact {
+        padding: 120px 0;
+    }
+
+    .contact__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
