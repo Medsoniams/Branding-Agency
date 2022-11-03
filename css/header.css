@@ -15,7 +15,6 @@
     line-height: 25px;
     font-weight: 700;
     color: var(--color-primary);
-
 }
 
 .header__burger {
@@ -72,7 +71,7 @@
     width: 200px;
     height: 100%;
     position: fixed;
-    top: 100px;
+    top: 90px;
     right: 0;
     z-index: 10;
     background-color: var(--color-yellow-bg);
@@ -98,6 +97,18 @@
 
 .header__promo {
     padding: 100px 0 130px;
+}
+
+.header__promo.active::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
 
 .header__promo-title {
