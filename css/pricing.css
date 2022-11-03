@@ -1,0 +1,141 @@
+.pricing {
+    padding: 90px 0 60px;
+    background-color: #f5f5f5;
+}
+
+.pricing__subtitle {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-orange);
+}
+
+.pricing__title {
+    margin-top: 20px;
+    font-family: "Libre Caslon Text", serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.pricing__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.pricing__card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 27px;
+    background-color: var(--color-white);
+}
+
+.pricing__card-title {
+    font-family: "Libre Caslon Text", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.pricing__card-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.pricing__card-pricing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*.pricing__card-pricing:after {*/
+/*    content: "";*/
+/*    width: 1px;*/
+/*    height: 24px;*/
+/*    background-color: var(--color-primary);*/
+/*    margin: 0 0 0 7px;*/
+/*}*/
+
+.pricing__card-price {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-orange);
+}
+
+.pricing__card-price::after {
+    content: "";
+    width: 1px;
+    height: 24px;
+    background-color: var(--color-primary);
+    margin: 0 0 0 7px;
+}
+
+.pricing__card-month {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.pricing__card-btn {
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: var(--color-yellow-bg);
+    border-radius: 34px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-white);
+    transition: all .3s;
+}
+
+.pricing__card-btn:hover {
+    background-color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .pricing__cards {
+        gap: 30px;
+    }
+
+    .pricing__card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .pricing__card-title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .pricing__card-pricing {
+        margin: 0 auto;
+    }
+
+    .pricing__card-price {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .pricing__card-btn {
+        width: max-content;
+        margin: 0 auto;
+    }
+}
