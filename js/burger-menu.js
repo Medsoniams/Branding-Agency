@@ -20,4 +20,13 @@
       }
     });
   });
+  headerPromo.addEventListener('click', function () {
+    if (headerBurger.classList.contains("active")) {
+      document.body.classList.remove("lock");
+      headerBurger.classList.remove("active");
+      headerNav.classList.remove("active");
+      headerPromo.classList.remove("active")
+    }
+  })
+
 })();
