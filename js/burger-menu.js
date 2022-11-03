@@ -9,7 +9,7 @@
 
   const navLinks = document.querySelectorAll(".header__nav-link");
   navLinks.forEach((navLink) => {
-    navLink.addEventListener("click", (_) => {
+    navLink.addEventListener("click", function () {
       if (headerBurger.classList.contains("active")) {
         document.body.classList.remove("lock");
         headerBurger.classList.remove("active");
