@@ -1,6 +1,5 @@
 (function () {
   let rates;
-
   const prising = [
     {
       id: "1",
@@ -21,7 +20,6 @@
       price: 1800,
     },
   ];
-
   function renderPricing() {
     const prisingContainer = document.querySelector(".pricing__cards");
     prisingContainer.innerHTML = "";
@@ -32,7 +30,7 @@
                     <p class="pricing__card-subtitle">${price.subtitle}</p>
                     <div class="pricing__card-pricing">
                         <span class="pricing__card-price">${
-                          price.price * rate
+                            Math.floor(price.price * rate)
                         }</span>
                         <span class="pricing__card-month">monthly</span>
                     </div>
@@ -40,10 +38,8 @@
                 </div>`;
     }
   }
-
   const pricingCurrency = document.getElementById("pricing__currency");
   pricingCurrency.addEventListener("change", convertCurrency);
-
   async function convertCurrency() {
     const currency = pricingCurrency.value;
     if (!rates) {
