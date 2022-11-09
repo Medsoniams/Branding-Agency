@@ -81,7 +81,7 @@
 .form input {
   width: 100%;
   padding: 12px 24px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 34px;
 
   background-color: rgba(26, 26, 26, 0.12);
@@ -100,11 +100,6 @@ textarea::placeholder {
   line-height: 16px;
 }
 
-.form-number,
-.form-email{
-  margin-top: 24px;
-}
-
 .form-text {
   width: 100%;
   min-height: 150px;
@@ -117,7 +112,6 @@ textarea::placeholder {
   border-radius: 34px;
   background-color: rgba(26, 26, 26, 0.12);
 
-  margin-top: 24px;
   padding: 12px 24px;
 
   resize: none;
@@ -139,8 +133,28 @@ textarea::placeholder {
 
   border: none;
   border-radius: 34px;
+}
 
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-btn:hover {
+  background: #efc12d;
   cursor: pointer;
+}
+
+.form-field.error input {
+  border-color: var(--error-color);
+}
+
+.form-field.success input {
+  border-color: var(--success-color);
+}
+
+.form-field small {
+  margin-left: 10px;
+  color: var(--error-color);
 }
 
 @media (min-width: 768px) {

@@ -2,6 +2,8 @@
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     /*  font-family: 'Libre Caslon Text', serif;  */
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
     --color-primary: #1a1a1a;
     --color-orange: #f27523;
     --color-white: #fff;
