@@ -53,7 +53,7 @@
 
 .contacts__questions-map iframe {
   width: 100%;
-  height: 324px;
+  height: 350px;
 }
 
 .contacts__form-block {
@@ -160,6 +160,7 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .contacts__inner {
     display: grid;
+    align-items: stretch;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }

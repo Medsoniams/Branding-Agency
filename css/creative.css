@@ -85,7 +85,7 @@
 
 @media (min-width: 991px) {
     .creative-right {
-        padding: 120px 24px 0;
+        padding: 120px 24px 120px;
         background-color: var(--color-primary);
         color: var(--color-white);
     }

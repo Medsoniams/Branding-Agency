@@ -1,0 +1,143 @@
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer__inner {
+  padding: 60px 0 15px;
+}
+
+.footer__inner-text {
+  text-align: center;
+}
+
+.footer__title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-primary);
+}
+
+.footer__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: rgba(26, 26, 26, 0.6);
+
+  margin-top: 30px;
+}
+
+.footer__nav-list {
+  margin-top: 50px;
+}
+
+.footer__nav-item + .footer__nav-item {
+  margin-top: 20px;
+}
+
+.footer__nav-item {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer__nav-link {
+  color: var(--color-primary);
+  transition: all 0.3s;
+}
+
+.footer__nav-link:hover {
+  color: var(--color-orange);
+}
+
+.footer__inner-social {
+  margin-top: 50px;
+}
+
+.footer__social-title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.footer__social {
+  margin-top: 30px;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer__social-link svg {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 5px;
+  fill: var(--color-white);
+  background-color: var(--color-orange);
+  padding: 4px;
+}
+
+.footer__social-link svg:hover {
+  background-color: #c9651a;
+}
+
+@media (min-width: 768px) {
+  .footer__inner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+  .footer__inner-text {
+    text-align: left;
+  }
+
+  .footer__subtitle {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .footer__nav-list {
+    margin: 0;
+  }
+
+  .footer__nav-item {
+    text-align: left;
+  }
+
+  .footer__inner-social {
+    margin: 0;
+  }
+
+  .footer__social-title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+@media (min-width: 991px) {
+    .footer__inner {
+        gap: 50px;
+    }
+
+    .footer__subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .footer__nav-link {
+        font-size: 16px;
+    }
+
+    .footer__social-title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
